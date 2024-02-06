@@ -7,14 +7,14 @@ body, html {
 }
 
 header {
-    position: absolute;
+    background-color: rgb(50, 7, 90);
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
 nav {
-    background-color: rgba(0,0,0,0);  /* Set the transparency to 0.3 */
+    background-color: rgba(0,0,0,0);
     overflow: hidden;
     width: 75%;
     display: flex;
@@ -28,6 +28,11 @@ nav ul {
 
 nav ul li{
     margin-right: 15px;
+}
+
+nav a{
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 section {
@@ -47,7 +52,7 @@ section {
 }
 
 #section-header div img{
-    width: 100px;
+    width: 200px;
     border-radius: 50%;
 }
 
