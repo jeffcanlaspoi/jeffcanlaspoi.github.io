@@ -1,0 +1,56 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html {
+    height: 100%;
+}
+
+main {
+    height: 100%;
+}
+
+section {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation-name: spinner;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+@keyframes spinner {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
