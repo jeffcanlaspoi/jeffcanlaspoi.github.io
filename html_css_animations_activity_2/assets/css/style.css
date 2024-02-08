@@ -1,0 +1,54 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html {
+    height: 100%;
+}
+
+main {
+    height: 100%;
+}
+
+section {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 1px solid black;
+
+    animation-name: pulse;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes pulse{
+    0% { 
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.3);
+    }
+    20% { 
+        box-shadow: 0px 0px 10px 10px rgba(6, 14, 238, 0.3);
+        border: 1px solid rgb(9, 9, 154);
+    }
+    40% { 
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.3); 
+    }
+    60% { 
+        box-shadow: 0px 0px 10px 10px rgba(248, 12, 12, 0.8); 
+        border: 1px solid red;
+    }
+    80% { 
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.3); }
+    100% { 
+        box-shadow: 0px 0px 10px 10px rgba(15, 235, 29, 0.1); 
+        border: 1px solid rgb(6, 79, 6);
+    }
+}
