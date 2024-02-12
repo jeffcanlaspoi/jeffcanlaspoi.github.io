@@ -1,0 +1,75 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    color: #FFFFFF;
+}
+
+body, html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    background-color: #0A192F;
+}
+
+#nav-container {
+    width: 1024px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px;
+}
+
+#nav-logo {
+    background-color: green;
+}
+
+#nav-menu {
+    display: flex;
+}
+
+#nav-menu ul{
+    display: flex;
+    list-style: none;
+}
+
+#nav-menu ul li{
+    margin-left: 50px;
+}
+
+#nav-menu ul li a{
+    text-decoration: none;
+}
+
+section, footer {
+    padding: 100px 200px 100px;
+}
+
+#section-hero {
+    background-color: #0A192F;
+}
+
+#section-about {
+    background-color: #7d8ca2;
+}
+
+#section-experience {
+    background-color: #052554;
+}
+
+#section-work {
+    background-color: #172945;
+}
+
+#section-contact {
+    background-color: #5281c7;
+}
+
+#footer {
+    background-color: #0A192F;
+}
