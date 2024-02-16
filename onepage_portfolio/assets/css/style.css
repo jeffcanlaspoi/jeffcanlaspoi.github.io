@@ -142,8 +142,8 @@ section, footer {
     background-color: #172945;
 }
 
-#section-contact {
-    background-color: #5281c7;
+#section-trainings {
+    background-color: #a8a9ac;
 }
 
 #footer {
@@ -227,5 +227,150 @@ section, footer {
     transition: box-shadow 0.5s ease;
 }
 
+#section-experience .section-container > h1{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.work-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.work-head-container{
+    background-color: #4BBFAB;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 0px 0px 10px;
+    width: 30%;
+}
+
+.work-details-container {
+    width: 70%;
+    background-color: #FFFFFF;
+    padding: 50px;
+    text-align: start;
+    border-radius: 0px 10px 10px 0px;
+    color: #000000;
+}
+
+.work-details-container h1, .work-details-container p{
+    color: #000000;
+}
+
+.work-head-container p{
+    margin-bottom: 20px;
+}
+
+.work-details-container h1{
+    font-size: 24px;
+}    
+
+#section-trainings .section-container > h1{
+    text-align: center;
+    margin-bottom: 60px;
+    color: #000000;
+}
+
+.trainings-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.trainings-head-container {
+    text-align: center;
+    width: 100%;
+    padding: 50px;
+    background-color: #FFFFFF;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.trainings-head-container p:last-of-type{
+    font-size: 12px;
+}
+
+.trainings-head-container > div{
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 5px;
+}
+
+.trainings-head-container h1, .trainings-head-container p{
+    color: #000000;
+    font-weight: 900;
+}
+
+.trainings-head-container:hover {
+    box-shadow: 0 0 20px 0 #ffffff; 
+    transition: box-shadow 0.5s ease;
+}
+
+.img1 {
+    background-image: url("../images/kodego-bg.png"), linear-gradient(to bottom, rgba(9, 30, 152, 0.52), rgba(117, 19, 93, 0.73));
+    background-size: cover;
+}
+
+.img2 {
+    background-image: url("../images/y4it-bg.jpg"), linear-gradient(to bottom, rgba(9, 30, 152, 0.52), rgba(117, 19, 93, 0.73));
+    background-size: cover;
+    background-position: center center;
+}
 
 
+.img3 {
+    background-image: url("../images/cyber-bg.jpg"), linear-gradient(to bottom, rgba(9, 30, 152, 0.52), rgba(117, 19, 93, 0.73));
+    background-size: cover;
+    background-position: center center;
+}
+
+.img4 {
+    background-image: url("../images/android-bg.jpg"), linear-gradient(to bottom, rgba(9, 30, 152, 0.52), rgba(117, 19, 93, 0.73));
+    background-size: cover;
+    background-position: center center;
+}
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+#footer h1 {
+    margin-bottom: 100px;
+}
+
+.footer-container {
+    width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+}
+
+#footer img {
+    width: 100px;
+}
+
+#footer P {
+    width: 102;
+    text-align: start;
+}
+
+#footer .img-container {
+    padding: 30px;
+    background-color: #4BBFAB;
+    border-radius: 50%;
+}
+
+.footer-container > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider {
+    width: 1024px;
+    border: solid 1px white ;
+    margin-bottom: 10px;
+}
