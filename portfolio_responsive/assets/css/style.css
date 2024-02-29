@@ -7,6 +7,7 @@
     --text-primary-color: #4BBFAB;
     --text-secondary-color: #B9BABF;
     --bg-primary-color: #0A192F;
+    --bg-primary2-color: #4BBFAB;
     --bg-secondary-color: #A8A9AC;
     --bg-primary-light-color: #44628F;
 }
@@ -39,6 +40,10 @@ nav, #hero-section {
     background-color: var(--bg-primary-color);
 }
 
+.cstm-bg-primary2 {
+    background-color: var(--bg-primary2-color);
+}
+
 .cstm-bg-primary-light {
     background-color: var(--bg-primary-light-color);
 }
@@ -66,4 +71,24 @@ nav, #hero-section {
 #about-section img {
     width: 150px;
     left: 50%;
+}
+
+.bg-kodego {
+    background-image: url("../images/logos/kodego-bg.png");
+    background-size: cover;
+}
+
+.bg-y4it {
+    background-image: url("../images/logos/y4it-bg.jpg");
+    background-size: cover;
+}
+
+.bg-cyber {
+    background-image: url("../images/logos/cyber-bg.jpg");
+    background-size: cover;
+}
+
+.bg-android {
+    background-image: url("../images/logos/android-bg.jpg");
+    background-size: cover;
 }
