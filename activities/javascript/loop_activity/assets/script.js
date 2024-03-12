@@ -8,11 +8,11 @@ btnExecute.addEventListener('click', function() {
     let counter = 1;
 
     for (let rowCount = 1; rowCount <= numberOfRows; rowCount++) {
-        
+
         let tblRowHTML = "<tr>";
 
         for (let columnCount = 1; columnCount <= numberOfColumns; columnCount++) {
-            tblRowHTML += "<td class='text-center'>" + counter + "</td>";
+            tblRowHTML += "<td class='text-center'>" + rowCount * columnCount + "</td>";
             counter++;
         }
 
