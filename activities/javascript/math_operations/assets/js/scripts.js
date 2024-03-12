@@ -14,7 +14,7 @@ function calculate(operator){
     else
         alert("SELECT OPERATOR");
 
-        document.getElementById('input-total').value = total;
+    document.getElementById('input-total').value = total;
 }
 
 // function add(){
