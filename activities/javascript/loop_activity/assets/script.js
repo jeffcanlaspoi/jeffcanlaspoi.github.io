@@ -1,11 +1,8 @@
-let btnExecute = document.getElementById("btn-execute");
+document.getElementById("btn-execute").addEventListener('click', function() {
 
-btnExecute.addEventListener('click', function() {
-
-    let numberOfRows = document.getElementById("input-number-rows").value;
-    let numberOfColumns = document.getElementById("input-number-columns").value;
+    const numberOfRows = document.getElementById("input-number-rows").value;
+    const numberOfColumns = document.getElementById("input-number-columns").value;
     let tblBodyHTML = "";
-    let counter = 1;
 
     for (let rowCount = 1; rowCount <= numberOfRows; rowCount++) {
 
@@ -13,7 +10,6 @@ btnExecute.addEventListener('click', function() {
 
         for (let columnCount = 1; columnCount <= numberOfColumns; columnCount++) {
             tblRowHTML += "<td class='text-center'>" + rowCount * columnCount + "</td>";
-            counter++;
         }
 
         tblRowHTML += "</tr>";
