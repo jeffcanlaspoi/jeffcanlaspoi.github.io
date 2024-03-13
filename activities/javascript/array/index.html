@@ -33,7 +33,12 @@
                                 <label for="input-working-hours" class="form-label">Working Hours</label>
                                 <input type="number" class="form-control" id="input-working-hours">
                             </div>
-                            <button class="btn btn-primary" id="btn-login">Log Hours</button>
+                            <div class="d-flex justify-content-between">
+                                <button class="btn btn-primary" id="btn-login">Log Hours</button>
+                                <h4>Total Hours: </h4>
+                                <h4 id="total-hrs">0</h1>
+                            </div>
+                            
                         </div>
                     </div>
                     <div class="col-lg-8 mh-100">
@@ -41,10 +46,10 @@
                             <table class="table-info table-striped w-100 text-center">
                                 <thead>
                                     <tr>
-                                        <th >Employee Id</th>
-                                        <th >Fullname</th>
-                                        <th >Hours</th>
-                                        <th >Action</th>
+                                        <th>Employee Id</th>
+                                        <th>Fullname</th>
+                                        <th>Hours</th>
+                                        <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody id="tbl-body"></tbody>
