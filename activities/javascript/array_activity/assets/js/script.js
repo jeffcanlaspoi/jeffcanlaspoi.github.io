@@ -1,29 +1,32 @@
 let employeeList = [];
 
-document.getElementById('btn-login').addEventListener('click', function(){
+document.getElementById('btn-log').addEventListener('click', function(){
     
     let employeeId = document.getElementById('input-employee-id').value;
     let employeeName = document.getElementById('input-employee-name').value;
     let workingHours = document.getElementById('input-working-hours').value;
     let existing = false;
 
-    for(let i = 0; i < employeeList.length; i++){
-        if(employeeList[i][0] === employeeId){
-            employeeList[i][1] = employeeName;
-            employeeList[i][2] = workingHours;
-            existing = true;
+    if(employeeId === "" || employeeName === "" || workingHours === ""){
+        alert('Please input data on the fields.')
+    } else {
+        for(let i = 0; i < employeeList.length; i++){
+            if(employeeList[i][0] === employeeId){
+                existing = true;
+                employeeList[i][1] = employeeName;
+                employeeList[i][2] = workingHours;
+            }
         }
-
+    
+        if(!existing){
+            employeeList.push( [employeeId, employeeName, workingHours] );
+        }
+    
+        DisplayRow();
+        document.getElementById('input-employee-id').value = "";
+        document.getElementById('input-employee-name').value = "";
+        document.getElementById('input-working-hours').value = "";
     }
-
-    if(!existing){
-        employeeList.push( [employeeId, employeeName, workingHours] );
-    }
-
-    DisplayRow();
-    document.getElementById('input-employee-id').value = "";
-    document.getElementById('input-employee-name').value = "";
-    document.getElementById('input-working-hours').value = "";
 });
 
 function edit(index){
@@ -47,8 +50,8 @@ function DisplayRow(){
         tblDataHTML += "<td>" + employeeList[rowCount][1] + "</td>"; 
         tblDataHTML += "<td>" + employeeList[rowCount][2] + "</td>"; 
         tblDataHTML += "<td>"
-        tblDataHTML += "<button class='btn btn-danger btn-sm' onclick='remove(" + rowCount + ")'> Remove </button>"; 
-        tblDataHTML += "<button class='btn btn-warning btn-sm' onclick='edit(" + rowCount + ")'> Edit </button>"; 
+        tblDataHTML += "<button class='btn btn-warning btn-sm me-2' onclick='edit(" + rowCount + ")'> Edit </button>"; 
+        tblDataHTML += "<button class='btn btn-danger btn-sm ' onclick='remove(" + rowCount + ")'> Remove </button>"; 
         tblDataHTML += "</td>"; 
         tblDataHTML += "</tr>";
 
