@@ -1,35 +1,50 @@
 let employeeList = [];
+let editFlag = false;
+let existing = false;
 
 document.getElementById('btn-log').addEventListener('click', function(){
     
     let employeeId = document.getElementById('input-employee-id').value;
     let employeeName = document.getElementById('input-employee-name').value;
     let workingHours = document.getElementById('input-working-hours').value;
-    let existing = false;
 
     if(employeeId === "" || employeeName === "" || workingHours === ""){
         alert('Please input data on the fields.')
     } else {
-        for(let i = 0; i < employeeList.length; i++){
-            if(employeeList[i][0] === employeeId){
-                existing = true;
-                employeeList[i][1] = employeeName;
-                employeeList[i][2] = workingHours;
+        if(editFlag === true){
+            for(let i = 0; i < employeeList.length; i++){
+                if(employeeList[i][0] === employeeId){
+                    employeeList[i][1] = employeeName;
+                    employeeList[i][2] = workingHours;
+                }
+            }
+        } else {
+            if(!employeeList.length){
+                employeeList.push( [employeeId, employeeName, workingHours] );
+            } else {
+                for(let i = 0; i < employeeList.length; i++){
+                    if(employeeList[i][0] === employeeId){
+                        existing = true;
+                        alert('existing');
+                    }
+                }
+
+                if(!existing){
+                    employeeList.push( [employeeId, employeeName, workingHours] );
+                }
             }
         }
-    
-        if(!existing){
-            employeeList.push( [employeeId, employeeName, workingHours] );
-        }
-    
-        DisplayRow();
-        document.getElementById('input-employee-id').value = "";
-        document.getElementById('input-employee-name').value = "";
-        document.getElementById('input-working-hours').value = "";
+        editFlag = false;
+        existing = false;
     }
+    DisplayRow();
+    document.getElementById('input-employee-id').value = "";
+    document.getElementById('input-employee-name').value = "";
+    document.getElementById('input-working-hours').value = "";
 });
 
 function edit(index){
+    editFlag = true;
     document.getElementById('input-employee-id').value = employeeList[index][0];
     document.getElementById('input-employee-name').value = employeeList[index][1];
     document.getElementById('input-working-hours').value = employeeList[index][2];
