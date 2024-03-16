@@ -41,6 +41,7 @@ document.getElementById('btn-log').addEventListener('click', function(){
     document.getElementById('input-employee-id').value = "";
     document.getElementById('input-employee-name').value = "";
     document.getElementById('input-working-hours').value = "";
+    document.getElementById('btn-log').innerText = "Log Hours";
 });
 
 function edit(index){
@@ -48,6 +49,7 @@ function edit(index){
     document.getElementById('input-employee-id').value = employeeList[index][0];
     document.getElementById('input-employee-name').value = employeeList[index][1];
     document.getElementById('input-working-hours').value = employeeList[index][2];
+    document.getElementById('btn-log').innerText = "Update";
 }
 
 function remove(index){
