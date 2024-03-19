@@ -25,10 +25,15 @@ function average(){
     let inputs = document.querySelectorAll('input');
     let gradeResult = 0;
 
-    for(let input of inputs){
-        gradeResult += Number(input.value);
+    if(inputs.length){
+        for(let input of inputs){
+            gradeResult += Number(input.value);
+        }
+    
+        let average = gradeResult / inputs.length;
+        document.querySelector("#grade-result").innerText = average;
+    } else {
+        document.querySelector("#grade-result").innerText = 0;
     }
-
-    let average = gradeResult / inputs.length;
-    document.querySelector("#grade-result").innerText = average;
+    
 }
