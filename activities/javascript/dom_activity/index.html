@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Activity</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Grading System</a>
+                <!-- <p class="navbar-text m-0">Jeffrey Canlas</p> -->
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="d-flex justify-content-center mt-5">
+            <div class="bg-info d-flex flex-column p-3 rounded h-auto">
+                <div class="d-flex align-items-center">
+                    <h3 class="me-3">Grade Result:</h3>
+                    <h3 id="grade-result">00</h3>
+                </div>
+                <div class="d-flex justify-content-between mb-2">
+                    <button class="btn btn-primary btn-sm me-2" id="btnAdd">Add Grade</button>
+                    <button class="btn btn-warning btn-sm me-2" id="btnCalculate">Calculate</button>
+                    <button class="btn btn-danger btn-sm" id="btnRemove">Remove</button>
+                </div>
+                <div id="input-grade-field">
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
