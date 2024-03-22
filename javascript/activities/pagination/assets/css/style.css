@@ -1,0 +1,24 @@
+/* @font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins/Poppins-Regular.ttf);
+} */
+
+/* :root {
+    --text-primary-color: #4BBFAB;
+    --text-secondary-color: #B9BABF;
+    --bg-primary-color: #0A192F;
+    --bg-primary2-color: #4BBFAB;
+    --bg-secondary-color: #A8A9AC;
+    --bg-primary-light-color: #44628F;
+} */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+body, html {
+    height: 100%;
+}
