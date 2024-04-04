@@ -11,19 +11,32 @@
       crossorigin="anonymous"
     />
     <!-- Google Icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
     <!-- Font Awesome 4 Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
     <header class="container">
-      <nav class="navbar navbar-expand-md">
+      <nav class="navbar navbar-expand-md fixed-top bg-nav shadow-sm">
         <div class="container">
-          <a class="navbar-brand">
+          <a href="#" class="navbar-brand">
             <img
               src="assets/images/habhab_logo2.png"
-              width="200"
+              width="150"
               alt="Hab-Hab Logo"
             />
           </a>
@@ -40,10 +53,18 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item ms-auto"><a class="nav-link" href="#">Recipe</a></li>
-              <li class="nav-item ms-auto"><a class="nav-link" href="#">About</a></li>
               <li class="nav-item ms-auto">
-                <a class="nav-link" href="#">Contact Us</a>
+                <a class="nav-link active-nav nav-link-smooth" id="nav-recipe" href="#main-content"
+                  >Recipe</a
+                >
+              </li>
+              <li class="nav-item ms-auto">
+                <a class="nav-link nav-link-smooth" id="nav-about" href="#main-content"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item ms-auto">
+                <a class="nav-link nav-link-smooth" href="#contact">Contact Us</a>
               </li>
             </ul>
           </div>
@@ -81,9 +102,9 @@
         </div>
       </div>
     </header>
-    <main>
-      <section>
-        <div class="container my-5 text-center">
+    <main id="main-content" class="pt-4">
+      <section class="pt-5" id="recipe">
+        <div class="container py-5 text-center">
           <h1>Explore Authentic Filipino Flavors!</h1>
           <h5>
             Unleash your creativity in the kitchen and write your own culinary
@@ -103,27 +124,67 @@
             </button>
           </div>
         </div>
-      </section>
-      <section>
         <div class="container px-5 pb-5">
           <div class="row p-3" id="display-cards">
             <!-- column cards goes here -->
           </div>
         </div>
       </section>
+      <section class="d-none" id="about">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-lg-2 py-5">
+            <div class="col d-flex justify-content-center align-items-center">
+              <div>
+                <img
+                  src="https://images.nightcafe.studio/jobs/kFzybMb300kDqaByHmMa/kFzybMb300kDqaByHmMa--1--015li.jpg?tr=w-1600,c-at_max"
+                  class="rounded-circle img-fluid"
+                  alt="Chef Panda"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <h1 class="fw-bold mb-3">Welcome to HAB-HAB!</h1>
+              <p class="fs-5">
+                At <b>HAB-HAB</b>, we are passionate about celebrating the rich and
+                diverse flavors of Filipino cuisine. Our mission is to showcase
+                the vibrant culinary heritage of the Philippines through
+                authentic dishes, traditional recipes, and modern
+                interpretations. <br /><br />
+
+                Inspired by the warmth of Filipino hospitality, HAB-HAB brings
+                together a community of food lovers, explorers, and home cooks
+                who share a love for Filipino food. Whether you're craving the
+                comforting flavors of adobo, the tangy zest of sinigang, or the
+                sweet indulgence of halo-halo, HAB-HAB is your go-to destination
+                for all things Filipino cuisine. <br /><br />
+
+                Join us on a culinary journey as we explore the flavors,
+                traditions, and stories behind Filipino food. Whether you're a
+                seasoned chef or a curious beginner, HAB-HAB is here to inspire,
+                educate, and delight your taste buds. <br /><br />
+
+                <i class="fw-bold fs-5">Mabuhay and welcome to the flavorful world of HAB-HAB!</i>
+              </p>
+            </div>
+            
+          </div>
+        </div>
+      </section>
     </main>
-    <footer class="container-fluid bg-white shadow-lg">
+    <footer class="container-fluid bg-white shadow-lg" id="contact">
       <div class="container">
-        <div class="row p-5">
-          <div class="col">
+        <div class="row py-5">
+          <div class="col col-auto">
             <h5 class="mb-3">HAB-HAB</h5>
             <div class="row">
               <div class="col-auto">
                 <i class="material-icons">business</i>
               </div>
-              <div class="col">
-                <p>123 Sesame Street <br>
-                Madagascar, Disney Land 12345</p>
+              <div class="col-auto">
+                <p>
+                  123 Sesame Street <br />
+                  Madagascar, Disney Land 12345
+                </p>
               </div>
             </div>
             <div class="row">
@@ -134,7 +195,6 @@
                 <p>Contact Us | 213-456-7890</p>
               </div>
             </div>
-            
           </div>
           <div class="col">
             <div class="row">
@@ -142,14 +202,18 @@
                 <h5 class="mb-3">Follow Us</h5>
               </div>
               <div class="col-12">
-                <i class="fa fa-facebook-square me-2" style="font-size:48px;"></i>
-                <i class="fa fa fa-twitter-square me-2" style="font-size:48px;"></i>
-                <i class="fa fa fa-instagram me-2" style="font-size:48px;"></i>
-                
+                <i
+                  class="fa fa-facebook-square me-2"
+                  style="font-size: 48px"
+                ></i>
+                <i
+                  class="fa fa fa-twitter-square me-2"
+                  style="font-size: 48px"
+                ></i>
+                <i class="fa fa fa-instagram me-2" style="font-size: 48px"></i>
               </div>
             </div>
           </div>
-          <div class="col"></div>
         </div>
       </div>
     </footer>
@@ -162,3 +226,5 @@
     <script src="assets/js/script.js"></script>
   </body>
 </html>
+
+
