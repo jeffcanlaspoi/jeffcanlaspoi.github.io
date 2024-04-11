@@ -23,7 +23,11 @@ const displayRecipes = (recipes) => {
     HTML += `
         <div class="col-md-6 col-lg-4 col-xxl-3 d-flex justify-content-center mb-5">
           <div class="card shadow-lg" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#${index}">
-            <img src="${item.image}" class="card-img-top object-fit-fill" alt="${item.name}" style="height: 200px;">
+            <img src="${
+              item.image
+            }" class="card-img-top object-fit-fill" alt="${
+      item.name
+    }" style="height: 200px;">
             <div class="card-body">
               <h5 class="card-title">${item.name}</h5>
               <p class="card-text">${item.description}</p>
@@ -36,21 +40,29 @@ const displayRecipes = (recipes) => {
           <div class="modal-dialog modal-dialog-scrollable">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-5" id="staticBackdropLabel">${item.name}</h1>
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">${
+                  item.name
+                }</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body d-flex flex-column">
                 <div class="text-center">
-                  <img src="${item.image}" class="rounded py-3" alt="" width="200">
+                  <img src="${
+                    item.image
+                  }" class="rounded py-3" alt="" width="200">
                 </div>
                 <div>
                   <h3>Directions</h3>
-                  <ul>${item.directions.map(direction => `<li>${direction}</li>`).join('')}</ul>
+                  <ul>${item.directions
+                    .map((direction) => `<li>${direction}</li>`)
+                    .join("")}</ul>
                 </div>
                 <div>
                   <h3>Ingredients</h3>
                   <ul>
-                    ${item.ingredients.map(ingredient => `<li>${ingredient}</li>`).join('')}
+                    ${item.ingredients
+                      .map((ingredient) => `<li>${ingredient}</li>`)
+                      .join("")}
                   </ul>
                 </div>
               </div>
@@ -151,6 +163,13 @@ document.querySelector("#search-input").addEventListener("focus", () => {
 getRecipes((err, data) => {
   if (err) {
     console.log(err);
+    let divNotFoundHTML = `
+          <div class="col d-flex flex-column align-items-center">
+            <h4>${err}</h4>
+            <img src="https://cdn3d.iconscout.com/3d/premium/thumb/error-404-8808969-7122238.png?f=webp" width="500" alt="Server Error">
+          </div>
+        `;
+      document.querySelector("#display-cards").innerHTML = divNotFoundHTML;
   } else {
     displayRecipes(data);
   }
