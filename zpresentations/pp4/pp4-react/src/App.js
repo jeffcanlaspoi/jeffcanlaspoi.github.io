@@ -23,9 +23,9 @@ function App() {
             <Route path="/shop">
               <Shop />
             </Route>
-            <Route path="/reviews">
+            {/* <Route path="/reviews">
               <Reviews />
-            </Route>
+            </Route> */}
             <Route path="/add-product">
               <AddProduct />
             </Route>

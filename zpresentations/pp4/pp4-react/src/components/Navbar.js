@@ -11,7 +11,7 @@ const Navbar = () => {
   const [navFlag, setNavFlag] = useState(false);
 
   return (
-    <nav className="fixed w-full z-10 bg-white flex justify-between items-center h-20 px-5 md:px-10 lg:px-20">
+    <nav className="fixed w-full z-10 bg-[#2A5828] flex justify-between items-center h-20 px-5 md:px-10 lg:px-20 shadow-lg text-white">
       <div>
         <a href="#">
           <img src={Logo} alt="Logo" width="70"/>
@@ -27,9 +27,9 @@ const Navbar = () => {
         <li>
           <Link to="/shop">Shop</Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="/reviews">Reviews</Link>
-        </li>
+        </li> */}
         <li>
           <Link to="/add-product">Add Product</Link>
         </li>
@@ -55,9 +55,9 @@ const Navbar = () => {
       <div
         className={`absolute ${
           navFlag ? "left-0" : "left-[100%]"
-        } top-0 w-full bg-gray-100/90 px-4 py-7 flex flex-col`}
+        } top-0 w-full bg-green-900/90 px-4 py-7 flex flex-col`}
       >
-        <h1>Beaches</h1>
+        <h1>BRAICE</h1>
         <ul>
           <li className="border-b">
             <Link to="/">Home</Link>
@@ -68,9 +68,9 @@ const Navbar = () => {
           <li className="border-b">
             <Link to="/shop">Shop</Link>
           </li>
-          <li className="border-b">
+          {/* <li className="border-b">
             <Link to="/reviews">Reviews</Link>
-          </li>
+          </li> */}
           <li className="border-b">
             <Link to="/add-product">Add Product</Link>
           </li>

@@ -1,3 +1,6 @@
+import Featured from "./Featured";
+import Services from "./Services";
+import Footer from "./Footer";
 import Hero from "./Hero";
 
 
@@ -5,7 +8,9 @@ const Homepage = () => {
   return (
     <div className="homepage">
       <Hero />
-      <h1>Homepage</h1>
+      <Featured />
+      <Services />
+      <Footer />
     </div>
   );
 }
