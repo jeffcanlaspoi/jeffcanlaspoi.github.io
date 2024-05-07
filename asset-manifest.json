@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/zpresentations/pp4/pp4-react/static/css/main.2332d341.css",
+    "main.js": "/zpresentations/pp4/pp4-react/static/js/main.78fdc146.js",
+    "static/media/tarp.jpg": "/zpresentations/pp4/pp4-react/static/media/tarp.d101ffb80c592a32711a.jpg",
+    "static/media/braice-cover-1.jpg": "/zpresentations/pp4/pp4-react/static/media/braice-cover-1.22f156731b7e3239c4ad.jpg",
+    "static/media/tshirt.jpg": "/zpresentations/pp4/pp4-react/static/media/tshirt.955c242047542a2a907e.jpg",
+    "static/media/braice-logo.jpg": "/zpresentations/pp4/pp4-react/static/media/braice-logo.bd7a0c7f4d1ecbef9e33.jpg",
+    "static/media/sintra.jpg": "/zpresentations/pp4/pp4-react/static/media/sintra.4fa89dd4fc68ca8821c9.jpg",
+    "static/media/objectives.png": "/zpresentations/pp4/pp4-react/static/media/objectives.40db20de9198962ee556.png",
+    "static/media/CEO.jpg": "/zpresentations/pp4/pp4-react/static/media/CEO.69db2792714ae52ed047.jpg",
+    "static/media/mugs.jpg": "/zpresentations/pp4/pp4-react/static/media/mugs.69262a2d80c66f38cb97.jpg",
+    "index.html": "/zpresentations/pp4/pp4-react/index.html",
+    "main.2332d341.css.map": "/zpresentations/pp4/pp4-react/static/css/main.2332d341.css.map",
+    "main.78fdc146.js.map": "/zpresentations/pp4/pp4-react/static/js/main.78fdc146.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2332d341.css",
+    "static/js/main.78fdc146.js"
+  ]
+}
